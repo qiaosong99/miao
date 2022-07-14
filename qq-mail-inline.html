@@ -7,7 +7,7 @@
   <title>Document</title>
   <style>
     *{
-      margin: 0;
+      margin: 0px;
       padding: 0;
     }
     .a{
@@ -15,31 +15,36 @@
       width: auto;
       height: 100px;
     }
+    .d{
+      font-size:0
+    }
     .b{
+      display: inline-block;
       background-color: brown;
       width: 200px;
       height: calc(100vh - 100px);
       overflow-y: scroll;
+      font-size: 14px;
     }
     .b>ul{
-      display: block;
       list-style-type: disc;
       padding-left: 40px;
       margin-top: 16px;
     }
     .c{
-        width: calc(100vw - 200px);
+       display: inline-block;
+        width:calc(100% - 200px);
         height: calc(100vh - 100px);
         background-color: teal;
-        margin-left: 200px;
-        margin-top: calc(100px - 100vh);
         overflow: auto;
+        font-size: 14px;
     }
 
   </style>
 </head>
 <body>
   <div class="a"></div>
+  <div class="d">
   <div class="b">
     <ul>
       <li></li>
@@ -131,6 +136,6 @@
     officia laudantium dolore nobis sequi modi molestiae eos, voluptatibus accusantium, incidunt cum rerum animi sunt laboriosam omnis
     perferendis dolorum reiciendis quaerat possimus. Dolores mollitia unde voluptates incidunt amet!
   </div>
-
+</div>
 </body>
 </html>
