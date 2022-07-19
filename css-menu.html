@@ -2,7 +2,7 @@
  * @Author: qiaosong 920323693@qq.com
  * @Date: 2022-07-15 17:11:00
  * @LastEditors: qiaosong 920323693@qq.com
- * @LastEditTime: 2022-07-15 19:58:15
+ * @LastEditTime: 2022-07-18 22:32:23
  * @FilePath: \新建文件夹 (2)\菜单.html
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -24,6 +24,7 @@
     width: 60px;
     height: 30px;
     background-color: darkgray;
+    padding: .5em;
     color: white;
     font-size: 14px;
     position: relative;
@@ -35,10 +36,13 @@
     color: white;
     border: 1px solid black;
     display: none;
+    padding: 0 .5em;
   }
   li{
     border: 1px solid black;
-    margin-top: 2px;
+    margin-top: px;
+    white-space: nowrap;
+    padding:0 100px 0 10px;
   }
   ul li:hover {
   background-color: gold;
@@ -46,6 +50,12 @@
   div:hover >ul{
     display: block;
   }
+  li.sep {
+  border-top: 1px solid;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 
 </style>
 <body>
@@ -54,6 +64,7 @@
       <li>新建文件夹</li>
       <li>新建文件</li>
       <li>新建窗口</li>
+      <li class="sep"></li>
       <li>打开文件</li>
       <li>打开文件夹</li>
       <li>从文件打开工作区</li>
